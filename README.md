@@ -2,6 +2,7 @@
 Projekt z warsztatu 2, kursu "zaJavka".
 
 **Example of an input sequence:**
+
 ADD PERSON(Tomasz_Romański)
 ADD PERSON(Rafał_Adamczuk)
 ADD PERSON(Tomasz_Romański)
