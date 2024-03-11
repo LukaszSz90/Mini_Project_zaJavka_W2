@@ -19,14 +19,14 @@ public class QueueCommand<T> {
     public void joinToQueueVip(T element) {
         boolean isAdded = queueVIP.offer(element);
         System.out.printf("%s came to the queue: %s%n", element, isAdded);
-        System.out.println(queue);
+        System.out.println("Queue: " + queue);
         System.out.println();
     }
 
     public void joinToQueue(T element) {
         boolean isAdded = queue.offer(element);
         System.out.printf("%s came to the queue: %s%n", element, isAdded);
-        System.out.println(queue);
+        System.out.println("Queue: " + queue);
         System.out.println();
     }
 
@@ -47,7 +47,7 @@ public class QueueCommand<T> {
         T enteredElement = queue.poll();
 
         System.out.printf("Processing queue: %s arrived at store", enteredElement);
-        System.out.println(queue);
+        System.out.println("Queue: " + queue);
         System.out.println();
     }
 
@@ -60,7 +60,7 @@ public class QueueCommand<T> {
         if (queue.contains(item)) {
             queue.remove(item);
             System.out.println("Leaving queue: " + item);
-            System.out.println(queue);
+            System.out.println("Queue: " + queue);
             System.out.println();
         } else {
             System.out.println(item + " is not currently in queue.");
